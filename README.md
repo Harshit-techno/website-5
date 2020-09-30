@@ -22,10 +22,10 @@ You may also wish to follow any install instructions inside a Python virtual env
 
 ## Running in development
 
-Prepare the database. This step can be skipped if you'd like to use dummy SQLite database:
+Prepare the database or this step can be skipped if you'd like to use dummy SQLite database:
 - Get a dump of the database
 - Create a local database `createdb okfn`
-- Populate it `psql okfn --file=/path/to/dump.sq` or `pg_restore -d okfn path/to/dump.dump`
+- Spread it `psql okfn --file=/path/to/dump.sq` or `pg_restore -d okfn path/to/dump.dump`
 
 Cherry-pick environment variables from `.env.example` you'd like to set and add it to the `.env` file. Popular options:
 - CACHE_URL
